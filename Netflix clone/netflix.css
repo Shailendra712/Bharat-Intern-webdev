@@ -1,0 +1,680 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@800&display=swap');
+
+body {
+    background-color: black;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main {
+    background: linear-gradient (to top, rgba(36, 36, 36, 0.5), #000);
+    background-image: url(images/bg.jpg);
+    height: 90vh;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+
+
+
+    /* background-size: max(1000px, 100vw); */
+}
+
+.main .box {
+    opacity: 0.75;
+    height: 90vh;
+    background: black;
+    width: 100%;
+    position: absolute;
+}
+
+nav {
+    height: 62px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    max-width: 150vh;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    position: relative;
+    z-index: 10;
+    width: 9.25rem;
+    height: 2.5rem;
+    color: rgb(229, 9, 20);
+
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
+.hero {
+    margin-top: 170px;
+    padding: 0px;
+    height: calc(100%-62%);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 10;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    gap: 23px;
+
+}
+
+.hero> :nth-child(1) {
+    text-align: center;
+    font-weight: 900;
+    font-size: 3rem;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+}
+
+.hero> :nth-child(2) {
+    text-align: center;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+
+}
+
+.hero> :nth-child(3) {
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.5;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+}
+
+.sep {
+    width: 100%;
+    height: 0.5rem;
+    background-color: rgb(35, 35, 35);
+}
+
+.btn {
+    padding: 3px 8px;
+    background-color: white;
+}
+
+/* english wali button */
+.btn-eng {
+    display: flex;
+    gap: 5px;
+    font-weight: 400;
+    color: white;
+    background-color: rgba(248, 243, 243, 0.021);
+    border: 1px solid white;
+    border-radius: 4px;
+    padding: 7px 22px;
+    font-size: 1rem;
+}
+
+/* sign in wali button */
+.btn-red {
+    padding: 7px 15px;
+    border-radius: 4px;
+    border: 1px solid red;
+    font-size: 0.875rem;
+    font-weight: 500;
+    background: rgb(229, 9, 20);
+    color: rgb(255, 255, 255);
+}
+
+/* get started wali button */
+.btn-sm {
+    background-color: red;
+    color: white;
+    font-size: 1.5rem;
+    padding: 11px 16px;
+    border-radius: 0.25rem;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+}
+
+/* place holder */
+.main input {
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 0.25rem;
+    padding: 18px 221px 17px 17px;
+    background: rgba(22, 22, 22, 0.7);
+    border-color: rgba(128, 128, 128, 0.7);
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.button {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+
+/* get started or button */
+.button2 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+/* sec1 */
+.first {
+    margin: auto;
+    max-width: 70vw;
+    display: flex;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    padding: 4.5rem;
+}
+
+section.first>div {
+    display: flex;
+    flex-direction: column;
+    padding-right: 0.375rem;
+    text-align: left;
+}
+
+section.first>div :nth-child(1) {
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+section.first>div :nth-child(2) {
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    margin: 1rem;
+    margin-left: 1px;
+}
+
+.sec-2 {
+    position: relative;
+}
+
+.sec-2 img {
+    width: 36vw;
+    position: relative;
+    z-index: 10;
+}
+
+.sec-2 video {
+    position: absolute;
+    top: 65px;
+    right: 0;
+}
+
+/* section 2 */
+.second {
+    margin: auto;
+    max-width: 70vw;
+    display: flex;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    padding: 4.5rem;
+}
+
+.sec-3 {
+    position: relative;
+}
+
+.sec-3 img {
+    width: 36vw;
+    position: relative;
+    z-index: 10;
+}
+
+section.second>div {
+    display: flex;
+    flex-direction: column;
+    padding-right: 0.375rem;
+    text-align: left;
+}
+
+section.second>div :nth-child(1) {
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+section.second>div :nth-child(2) {
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    margin: 1rem 0 0;
+}
+
+/* section 3 */
+.sec-4 {
+    position: relative;
+}
+
+.sec-4 img {
+
+    width: 40vw;
+    position: relative;
+    z-index: 10;
+}
+
+.sec-4 video {
+    position: absolute;
+    z-index: -1;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    max-width: 61%;
+    max-height: 46%;
+    top: 5%;
+    left: 18%;
+}
+
+.third {
+    margin: auto;
+    max-width: 70vw;
+    display: flex;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    padding: 4.5rem;
+}
+
+.sec-4 {
+    position: relative;
+}
+
+.sec-4 img {
+    width: 36vw;
+    position: relative;
+    z-index: 10;
+}
+
+section.third>div {
+    display: flex;
+    flex-direction: column;
+    padding-right: 0.375rem;
+    text-align: left;
+}
+
+section.third>div :nth-child(1) {
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+section.third>div :nth-child(2) {
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    margin: 1rem 0 0;
+}
+
+/* section 4 */
+.fourth {
+    margin: auto;
+    max-width: 70vw;
+    display: flex;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    padding: 4.5rem;
+}
+
+.sec-5 {
+    position: relative;
+}
+
+.sec-5 img {
+    width: 36vw;
+    position: relative;
+    z-index: 10;
+}
+
+section.fourth>div {
+    display: flex;
+    flex-direction: column;
+    padding-right: 0.375rem;
+    text-align: left;
+
+}
+
+section.fourth>div :nth-child(1) {
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+section.fourth>div :nth-child(2) {
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    margin: 1rem 0 0;
+}
+
+.faq {
+    background: black;
+    color: white;
+    padding: 4.5rem 0;
+
+}
+
+.faq h2 {
+    color: white;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 900;
+    margin: 0;
+
+}
+
+.faqbox:hover {
+    background-color: #414141;
+}
+
+.faqbox {
+    transition-duration: 250ms;
+    font-size: 1.5rem;
+    font-weight: 400;
+    display: flex;
+    max-width: 60vw;
+    margin: auto;
+    background-color: rgb(45, 45, 45);
+    justify-content: space-between;
+    align-items: center;
+    margin: 11px auto;
+    cursor: pointer;
+    transition: all 1s ease-out;
+    padding: 24px;
+    margin-bottom: 0.0625rem;
+}
+
+.secondEmail {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 6px;
+    flex-direction: column;
+    margin-top: 4rem;
+    gap: 2rem;
+}
+
+.secondEmail span {
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+.ome input {
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 0.25rem;
+    padding: 18px 221px 17px 17px;
+    background: rgba(22, 22, 22, 0.7);
+    border-color: rgba(128, 128, 128, 0.7);
+    color: rgba(255, 255, 255, 0.7);
+
+}
+.ome.btn-sm{ 
+    background-color: red;
+    color: white;
+    font-size: 1.5rem;
+    padding: 11px 16px;
+    border-radius: 0.25rem;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+}
+.ome{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+
+
+/*  footer section */
+footer {
+    margin-top: 4.5rem;
+    margin-bottom: 4.5rem;
+}
+
+/* footer class */
+.footer {
+    display: flex;
+    max-width: 60vw;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 1.75rem 202px;
+    width: 100%;
+    font-size: 0.91rem;
+    margin-top: 28px;
+    justify-content: space-around;
+}
+
+.footer-items {
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+}
+
+/* footer anchor tags */
+.footer a {
+    color: rgba(225, 225, 225, 0.7);
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+}
+
+footer span {
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    display: flex;
+    margin-bottom: 0.75rem;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-left: 254px;
+}
+
+.last .btn-eng {
+    font-weight: 100;
+    color: white;
+    background-color: rgba(248, 243, 243, 0.021);
+    border: 1px solid white;
+    border-radius: 4px;
+    padding: 7px 22px;
+    font-size: 1rem;
+    margin-left: 16rem;
+    display: flex;
+    gap: 5px;
+}
+
+.last span {
+    color: rgba(255, 255, 255, 0.7);
+    margin-top: 2rem;
+}
+
+@media only screen and (max-width:900px) and (min-width:300px) {
+
+    .main {
+        width: 100%;
+        height: auto;
+    }
+
+    nav img {
+        width: 100px;
+    }
+
+    .button {
+        padding: 6px, 15px;
+        font-size: 12px
+    }
+
+    .first,
+    .second,
+    .third,
+    .fourth {
+        flex-direction: column;
+    }
+
+    .hero {
+        margin-top: 12%;
+    }
+
+    .hero> :nth-child(1) {
+        font-size: 40px
+    }
+
+    .hero> :nth-child(2),
+    .hero> :nth-child(3) {
+        font-size: 18px;
+    }
+
+    .main .box {
+        height: 143vh;
+        width: 100%;
+    }
+
+    .main input {
+        padding: 12px 113px 15px 22px;
+    }
+    .button2{
+        flex-direction: column;
+    }
+
+
+
+    .btn-sm {
+        margin-left: 82px;
+        MARGIN-RIGHT: 55PX;
+        margin-bottom: 5px;
+        padding: 3px 17px;
+    }
+
+    section.first {
+        height: 335px;
+    }
+
+    section.first>div :nth-child(1) {
+        font-size: 2.8rem;
+        font-weight: 900;
+    }
+
+    .sec-2 img {
+        width: 331px;
+    }
+
+    .sec-2 video {
+        position: absolute;
+        top: 35px;
+        right: 30px;
+        max-height: 56%;
+    }
+
+    .second {
+        flex-direction: column-reverse;
+        height: 80%;
+    }
+
+    .third {
+        height: 251px;
+    }
+
+    section.third>div :nth-child(1) {
+        font-size: 2.56rem;
+        font-weight: 900;
+    }
+
+    section.third>div :nth-child(2) {
+        font-size: 1.3rem;
+        font-weight: 400;
+    }
+
+    .sec-4 img {
+        width: 331px;
+    }
+
+    .fourth {
+        flex-direction: column-reverse;
+    }
+
+    .sec-5 img {
+        width: 65vw;
+    }
+
+    section.fourth>div :nth-child(1) {
+        font-size: 2.8rem;
+    }
+
+    .faq h2 {
+        font-size: 2.5rem;
+        font-weight: 900;
+    }
+
+    .faqbox {
+        font-size: 1.1rem;
+        max-width: 78vw;
+        margin-bottom: 0.0625rem;
+    }
+
+    .secondEmail  span {
+        font-size: 1rem;
+        font-weight: 400;
+    }
+    .ome input {
+        padding: 12px 113px 15px 22px;
+        margin-left: 140px;
+        margin-right: 140px;
+    }
+
+    .secondEmail button{
+        margin-bottom: 5px;
+        padding: 3px 17px;
+        margin-left: 200px;
+        MARGIN-RIGHT: 200px;
+    }
+
+    section.first {
+        height: 335px;
+    }
+
+    footer span{
+        margin-left: 88px;
+    }
+    
+
+    .footer {
+        margin: 0.75rem 102px;
+        margin-top: 31px;
+    }
+
+    .footer-items {
+        margin-right: 30px;
+        gap: 30px;
+    }
+
+    .last .btn-eng {
+        gap: 6px;
+        padding: 4px 12px;
+        margin-left: 5.5rem;
+        margin-top: 2rem;
+    }
+    .last span{
+        margin-left: 90px;
+    }
+    .ome{
+        flex-direction: column;
+    }
+
+}
