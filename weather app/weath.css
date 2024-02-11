@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-image: url('https://source.unsplash.com/1600x900/?landscape');
+    font-size: 120%;
+    object-fit: cover;
+
+}
+
+.weatherContainer {
+    background: #000000d0;
+    color: white;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 490px;
+    margin: 1em;
+    height: 100%;
+    max-height: 404px;
+}
+
+#weatherForm input {
+    border: none;
+    color: black;
+    outline: none;
+    font-size: 1rem;
+    font-family: sans-serif;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 0.4em 1em;
+    border-radius: 24px;
+    background: #7c7c7c2b;
+    color: white;
+    font-family: inherit;
+    font-size: 105%;
+}
+
+#weatherForm {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+#weatherForm ul li {
+    list-style: none;
+}
+
+.searchBtn {
+    background: transparent;
+    margin: 0.5em;
+    border-radius: 50%;
+    border: none;
+    height: 44px;
+    width: 44px;
+    outline: none;
+    background: #7c7c7c2b;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.searchBtn:hover {
+    background: #7c7c7c6b;
+}
+
+.searchBtn ul li {
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+#city {
+    font-size: 2rem;
+    text-transform: capitalize;
+    text-align: center;
+    margin-top: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+#temp {
+    font-size: 3.5rem;
+    text-align: center;
+}
+
+.temp {
+    font-size: 3.5rem;
+}
+
+span {
+    font-size: 3.5rem;
+}
+
+#temp sup {
+    font-size: 1.5rem;
+}
+
+.weatherMain {
+    text-align: center;
+}
+
+
+#todayTime {
+    font-family: sans-serif;
+    text-align: center;
+
+}
+
+.todayDates {
+    font-family: sans-serif;
+    line-height: 2rem;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.weather-loading {
+
+    max-height: 20px;
+    position: relative;
+
+}
+
+.weather-loading:after {
+    visibility: visible;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 194px;
+}
+
+
+/* Utility Classes 
+.d-flex {
+    display: flex;
+}
+
+.justify-space-around {
+    justify-content: space-around;
+}
+
+.justify-space-center {
+    justify-content: center;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.f-col {
+    flex-direction: column;
+}*/
+
+/* Media Query for Responsive */
+@media screen and (max-width: 307px) {
+    #weatherForm {
+        flex-direction: column;
+    }
+
+    #weatherForm input {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+}
